@@ -10,3 +10,7 @@ A small pre-trained residual U-Net for gold fiducial segmentation in cryo-EM ima
 
 Documentation available at
 [teamtomo.org/torch-segment-fiducials-2d](https://teamtomo.org/torch-segment-fiducials-2d)
+
+<p align="center">
+  <img src="./docs/assets/torch-segment-fiducials-2d.png" width="600" alt="result of using torch-segment-fiducials-2d">
+</p>

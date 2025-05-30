@@ -2,6 +2,10 @@
 
 *torch-segment-fiducials-2d* contains a small pre-trained CNN for segmenting fiducials in cryo-EM images.
 
+<figure markdown="span">
+  ![Image title](./assets/torch-segment-fiducials-2d.png){ width="600" }
+</figure>
+
 ## Installation
 
 ```python
