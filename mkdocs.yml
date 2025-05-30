@@ -1,0 +1,51 @@
+site_name: torch-segment-fiducials-2d
+site_author: alisterburt
+site_description: >-
+  Documentation for torch-segment-fiducials-2d
+repo_name: teamtomo/torch-segment-fiducials-2d
+repo_url: https://github.com/teamtomo/torch-segment-fiducials-2d
+edit_uri: edit/main/docs/
+
+copyright: Copyright &copy; 2025 - 2025 teamtomo
+
+theme:
+  icon:
+    logo: material/cube-outline
+  name: material
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: blue
+      accent: blue
+
+  features:
+    - navigation.instant
+    - search.highlight
+    - search.suggest
+    - content.tabs.link
+
+markdown_extensions:
+  - admonition
+  - tables
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - pymdownx.tabbed:
+      alternate_style: true
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - md_in_html
+  - pymdownx.arithmatex:
+      generic: true
+
+plugins:
+  - search
+  - mkdocs-jupyter
+  - mkdocstrings:
+      handlers:
+        python:
+          paths: [src]
+          options:
+            docstring_style: numpy
