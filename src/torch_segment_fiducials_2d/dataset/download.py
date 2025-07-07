@@ -9,12 +9,12 @@ def download_training_data(output_directory: Path):
     subprocess.run(
         [
             "zenodo_get",
-            "7660739",
+            "15830961",
             "--output-dir",
             str(output_directory),
         ]
     )
-    zipped_archive = output_directory / "fidder_data.zip"
+    zipped_archive = output_directory / "fiducial_segmentation_images.zip"
     shutil.unpack_archive(
         zipped_archive,
         extract_dir=output_directory,
