@@ -1,6 +1,11 @@
 """A small pre-trained residual U-Net for gold fiducial segmentation in cryo-EM images"""
 
-__version__ = '0.1.0'
+from importlib.metadata import PackageNotFoundError, version
+
+try:
+    __version__ = version("torch-segment-fiducials-2d")
+except PackageNotFoundError:
+    __version__ = "uninstalled"
 __author__ = "Alister Burt"
 __email__ = "alisterburt@gmail.com"
 
